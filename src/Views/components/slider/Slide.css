@@ -1,0 +1,78 @@
+.slideshow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.slideshow .btn-con{
+    background-color:aqua;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.btn-con button{
+    margin-bottom: 50%;
+}
+.slideshow .btn-cont{
+    background-color:rgb(56, 179, 103);
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.btn-cont button{
+    margin-bottom: 50%;
+}
+
+.btn-cont .lines{
+    /* transform: rotate(90deg); */
+	/* transform-origin: left top 0; */
+    margin-top: 100%;
+    width: 16%;
+    height: 50%;
+    margin-right:35%;
+    background-color: pink;
+}
+.slide-lines{
+    background-color:  violet;
+}
+.slide-container{
+    width: 60%;
+    background-color: rgb(45, 141, 231);
+    
+}
+
+.each-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.each-slide .reclu-logo{
+  width: 40%;
+}
+
+.each-slide .sld {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../../assets/reclutachat_carrusel\ 1@2x.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+.indicator {
+    width: 30px;
+    color: rgb(180, 21, 180);
+    text-align: center;
+    cursor: pointer;
+    border: 1px rgb(202, 82, 250) solid;
+    
+  }
+  .indicator.active {
+    background: #000;
+    color: #fff;
+  }

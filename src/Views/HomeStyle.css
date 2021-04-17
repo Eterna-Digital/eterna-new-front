@@ -1,0 +1,121 @@
+.app-container{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #343232;
+    mix-blend-mode: screen;
+    /* opacity: 0.13; */
+    
+}
+.container-home{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.cont-txt{
+    position: absolute;
+    z-index: 8;
+    margin-top: 13%;
+    margin-left: -11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.cont-txt img{
+    width: 48%;
+}
+.cont-txt span{
+    width: 19%;
+    height: 2px;
+    margin-top: 6%;
+    background-color: rgb(255, 242, 242);
+    display: flex;
+    justify-content: start;
+}
+
+.cont-txt h1{
+    font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF;
+    font-weight: normal;
+    letter-spacing: 10px;
+    text-align: left;
+}
+.cont-txt p{
+    font-family: 'Source Code Pro', monospace;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.4rem;
+}
+
+
+.waves-cont{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid greenyellow;
+}
+.waves-cont .one-wave{
+    width: 50%;
+    height: 80%;
+    /* margin-bottom: 3%; */
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    /* mix-blend-mode: screen; */
+}
+.waves-cont .one-wave img{
+    width: 95%;
+    opacity: 0.9;
+    mix-blend-mode: screen;
+
+}
+.waves-cont .two-wave{
+   width: 70%;
+   height: 100%;
+   margin-left: -20% ;
+   position: absolute;
+   /* border: 2px solid pink; */
+   z-index: 5;
+}
+.waves-cont .two-wave img{
+    top: 70%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    mix-blend-mode: screen;
+
+} 
+
+.slider-cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343232;
+    position: relative;
+}
+
+.slider-cont .slider{
+    width: 70%;
+    height: 70%;
+    background-color: gold;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+}
+
+
+

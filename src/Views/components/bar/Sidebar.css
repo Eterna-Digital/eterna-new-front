@@ -1,0 +1,64 @@
+.cont-sidebar{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    position: absolute;
+    z-index: 100;
+}
+.cont-s{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+figure{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+figure img{
+    width: 70%;
+}
+.side-elements{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.date-cont{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.date-text{
+    transform: rotate(-90deg);
+	transform-origin: left top 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.1rem;
+    color: #E8E8E8;
+}
+.face-cont{
+    height: 40%;
+}
+.face-cont img{
+    width: 1.5rem;
+}
+.socialm-cont{
+    margin-top: 45%;
+    display: flex;
+}
+.socialm-cont :nth-of-type(1){
+    width: 4%;
+    margin-right: 20%;
+}
+.socialm-cont :nth-of-type(2){
+    width: 7%;
+}
