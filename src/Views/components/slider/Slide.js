@@ -3,8 +3,9 @@ import { Slide } from "react-slideshow-image";
 import "./Slide.css";
 import "react-slideshow-image/dist/styles.css";
 import Lines from '../../../assets/lineas.svg'
-import ReclutaLogo from '../../../assets/reclutachat logo.svg'
 import Comp from '../../../assets/reclutachat_carrusel 1@2x.png'
+import Right from '../../../assets/right-arrow.svg'
+import Left from '../../../assets/left-arrow.svg'
 
 class SlideShow extends Component {
   constructor() {
@@ -29,51 +30,50 @@ class SlideShow extends Component {
     const properties = {
       duration: 5000,
       autoplay: false,
-      transitionDuration: 500,
+      transitionDuration: 300,
       arrows: false,
       infinite: true,
       easing: "ease",
-      indicators: (i) => 
-       <div className="indicator">
-          {i + 1}
-  
-          </div>
+      indicators: (i) =>
+        <div className="indicator">
+         {i + 0}
+
+
+        </div>
     };
 
     return (
+
       <div className="slideshow">
-          <div className="btn-con">
-        <button onClick={this.back} type="button">
-            Go Back
+
+        <div className="btn-cont">
+          <button onClick={this.back} type="button" >
+          <img src={Left} alt="left" className="icn"/>
           </button>
-          </div>
-          {/* <div className="sli-lines"> */}
+        </div>
         <div className="slide-container">
           <Slide ref={this.slideRef} {...properties}>
-          
-              <div  className="each-slide">
-                <img className="lazy"  className="sld" />
-                {/* <img src={ReclutaLogo} alt="reclutachat" className="reclu-logo"/> */}
-              </div>
-              <div  className="each-slide">
-                <img className="lazy"  className="sld" />
-                {/* <img src={ReclutaLogo} alt="reclutachat" className="reclu-logo"/> */}
-              </div>
-              <div  className="each-slide">
-                <img className="lazy"  className="sld" />
-                {/* <img src={ReclutaLogo} alt="reclutachat" className="reclu-logo"/> */}
-              </div>
-         
+
+            <div className="each-slide">
+              <img src={Comp} alt="compu1" className="sld" />
+            </div>
+            <div className="each-slide">
+              <img src={Comp} alt="compu2" className="sld" />
+            </div>
+            <div className="each-slide">
+              <img src={Comp} alt="compu3" className="sld" />
+            </div>
+
           </Slide>
         </div>
-          {/* </div> */}
         <div className="btn-cont">
           <img src={Lines} alt="lines" className="lines" />
           <button onClick={this.next} type="button" >
-            Go Next
+            <img src={Right} alt="right" className="icn"/>
           </button>
-          </div>
+        </div>
       </div>
+
     );
   }
 }

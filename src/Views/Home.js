@@ -9,13 +9,6 @@ import SlideShow from './components/slider/Slide.js'
 
 gsap.registerPlugin(ScrollTrigger)
 
-// const sections = [
-//   {
-//     title: 'uno',
-//     subtitle: 'sub uno'
-//   },
- 
-// ];
 function Home() {
   const [background] = useState('#72C491')
 
@@ -122,6 +115,7 @@ function Home() {
       </div>
         <div className="slider-cont">
           <div className="slider" >
+          <p>NUESTROS PRODUCTOS</p>
               <SlideShow/>
           </div>
           {/* {

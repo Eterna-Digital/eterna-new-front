@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<title>left arrow</title>
+<circle cx="24" cy="24" r="24" style="fill: none"/>
+<path d="M24,0A24,24,0,1,0,48,24,24,24,0,0,0,24,0Zm0,46A22,22,0,1,1,46,24,22,22,0,0,1,24,46Z" style="fill:#fbfbfc"/>
+<path d="M26.32,16.91a.64.64,0,1,0-1-.84l-7.62,7.59h0a.65.65,0,0,0,0,.9l7.62,7.58a.63.63,0,0,0,.83,0,.64.64,0,0,0,.07-.9L19.1,24.11,26.26,17Z" style="fill:#fbfbfc"/>
+</svg>
