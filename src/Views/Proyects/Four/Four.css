@@ -1,0 +1,100 @@
+.four-container{
+    width: 100vw;
+    height: 100vh;
+    background: hsla(249, 100%, 65%, 1);
+    background: linear-gradient(180deg, hsla(249, 100%, 65%, 1) 0%, hsla(0, 2%, 20%, 1) 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10%;
+}
+.f-cont{
+    width: 80%;
+    height: 95%;
+}
+.f-cont h4{
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+  
+  .container .card1 {
+    position: relative;
+    
+    height:25rem;
+    border-radius: 0px;
+  }
+  .container .card1:nth-of-type(1){
+    left: -5rem;
+    width: 25%;
+}
+
+  .container .card1:nth-of-type(2){
+      position: absolute;
+      z-index: 8;
+      width: 20%;
+  }
+  .container .card1:nth-of-type(3){
+    right: -5rem;
+    width: 25%;
+  }
+  
+  .container .card1 .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 0;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all .1s ease-in-out;
+  }
+  
+  .container .card1 .box:hover {
+    transform: translateY(80px);
+    transform: scale(1.1);
+    z-index: 10;
+  }
+  
+  .container .card1 .box .content {
+    padding: 2 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container .card1 .box .content img{
+      width: 60%;
+      margin-bottom: 2rem;
+  }
+
+  .container .card1 .box .content p {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: 0.5s;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    width: 80%;
+    padding-left: 15%;
+  }
+  
+ 

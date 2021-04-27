@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react' 
 import './Sidebar.css'
 import DateApi from './DateApi'
 import LogoEterna from '../../../assets/eterna logo.svg'
-import Caritas from '../../../assets/caritas.svg'
+import Faces from './Faces'
 import Facebook from '../../../assets/facebook.svg'
 import Linkedin from '../../../assets/linkedin.svg'
 
 
 function Sidebar(){
+
     return(
         <div className="cont-sidebar">
             <div className="cont-s">
@@ -17,7 +18,7 @@ function Sidebar(){
                 <div className="side-elements">
                     <DateApi />
                     <div className="face-cont">
-                      <img src={Caritas} alt="caritas"/>
+                      <Faces/>
                     </div>
                     <div className="socialm-cont">
                       <img src={Facebook} alt="facebook"/>
@@ -28,6 +29,7 @@ function Sidebar(){
            
         </div>
     )
+    
 }
 
 export default Sidebar;

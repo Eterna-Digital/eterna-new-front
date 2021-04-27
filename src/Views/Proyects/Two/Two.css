@@ -1,0 +1,179 @@
+.two-container{
+    width: 100vw;
+    height: 100vh;
+    background: #6E81F8;
+background: -webkit-linear-gradient(top, #6E81F8, #73C591);
+background: -moz-linear-gradient(top, #6E81F8, #73C591);
+background: linear-gradient(to bottom, #6E81F8, #73C591);
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+/* padding-top: 10%; */
+}
+
+.two-c{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid greenyellow; */
+}
+.part{
+  width: 20%;
+  display: flex;
+  align-items: flex-start;
+  /* border: 2px solid pink; */
+}
+.part img{
+    position: absolute;
+    width: 30%;
+    top: -20%;
+    left: 6%;
+}
+.computer-2{
+    /* width: 50%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* border: 2px solid red; */
+}
+.computer-2 img{
+    position: absolute;
+    left: 7%;
+    width: 68%;
+}
+.tl-container{
+    width: 23%;
+    height: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 0rem;
+    left: -10%;
+}
+.tl-container img{
+    width: 60%;
+}
+
+.tl-container h1{
+    font-size: 3.5rem;
+    margin: 1rem 0 0 0;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tl-container p:nth-of-type(1){
+    font-family: 'Source Code Pro', monospace;
+    text-align: left;
+    text-decoration: underline;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.tl-container p:nth-of-type(2){
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+.tl-container .btn-card{
+    width: 100%;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20%;
+    margin-bottom: 5rem;
+}
+
+.tl-container .btn {
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    width: 12rem;
+    height: 2rem;
+    line-height: 64px;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .tl-container .btn span {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    font-weight: lighter;
+  color: rgb(255, 255, 255);
+  display: block;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  transform: scaleX(0.7);
+  letter-spacing: 5px;
+  transform-origin: left;
+  transition: color 0.4s ease;
+  position: relative;
+  z-index: 1;
+  height: 2rem;
+}
+.btn-card .btn em {
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  width: 52%;
+  right: 23px;
+  top: 50%;
+  transform: scaleX(0.25);
+  transform-origin: center right;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.btn-card .btn:before,
+.btn-card .btn:after {
+  content: '';
+  background: #fff;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.btn-card .btn:before {
+  top: 0;
+  left: 0;
+  right: auto;
+}
+.btn-card .btn:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+.btn-card .btn:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+.btn-card .btn:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.btn-card .btn:hover span {
+  color: #000;
+  font-weight: bolder;
+}
+.btn-card .btn:hover em {
+  background: #000;
+  transform: scaleX(1);
+}
+
+
+

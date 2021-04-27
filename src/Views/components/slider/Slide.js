@@ -3,9 +3,12 @@ import { Slide } from "react-slideshow-image";
 import "./Slide.css";
 import "react-slideshow-image/dist/styles.css";
 import Lines from '../../../assets/lineas.svg'
-import Comp from '../../../assets/reclutachat_carrusel 1@2x.png'
-import Right from '../../../assets/right-arrow.svg'
-import Left from '../../../assets/left-arrow.svg'
+import Reclu from '../../../assets/reclutachat carrusel@2x.png'
+import Tlegal from '../../../assets/tlegal carrusel@2x.png'
+import Wunnel from '../../../assets/wunnel carrusel@2x.png'
+import Right from '../../../assets/next.svg'
+import Left from '../../../assets/left-a.svg'
+
 
 class SlideShow extends Component {
   constructor() {
@@ -36,7 +39,7 @@ class SlideShow extends Component {
       easing: "ease",
       indicators: (i) =>
         <div className="indicator">
-         {i + 0}
+          {i + 0}
 
 
         </div>
@@ -47,29 +50,30 @@ class SlideShow extends Component {
       <div className="slideshow">
 
         <div className="btn-cont">
-          <button onClick={this.back} type="button" >
-          <img src={Left} alt="left" className="icn"/>
+          <button onClick={this.back} className="btn btn-5">
+            <img src={Left} alt="left" className="icn" />
           </button>
+          <div className="newline"></div>
         </div>
         <div className="slide-container">
           <Slide ref={this.slideRef} {...properties}>
 
             <div className="each-slide">
-              <img src={Comp} alt="compu1" className="sld" />
+              <img src={Reclu} alt="compu1" className="sld" />
             </div>
             <div className="each-slide">
-              <img src={Comp} alt="compu2" className="sld" />
+              <img src={Tlegal} alt="compu2" className="sld" />
             </div>
             <div className="each-slide">
-              <img src={Comp} alt="compu3" className="sld" />
+              <img src={Wunnel} alt="compu3" className="sld" />
             </div>
 
           </Slide>
         </div>
         <div className="btn-cont">
           <img src={Lines} alt="lines" className="lines" />
-          <button onClick={this.next} type="button" >
-            <img src={Right} alt="right" className="icn"/>
+          <button onClick={this.next} className="btn btn-5">
+            <img src={Right} alt="left" className="icn" />
           </button>
         </div>
       </div>
