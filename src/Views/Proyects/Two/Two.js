@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Morph from '../../components/morph/Morph'
 
 import './Two.css'
 import Particles from '../../../assets/tlegal_element.svg'
@@ -21,8 +22,8 @@ function Two() {
             scrollTrigger: {
                 trigger: compu22,
                 start: "top-=200 center",
-            end: "top-=200 top",
-                scrub: 1.0
+                end: "top-=200 top",
+                scrub: 1.0,
             }
         });
 
@@ -42,7 +43,7 @@ return (
   <div className="two-container">
       <div className="two-c">
           <div className="part">
-              <img src={Particles} alt="particles" />
+              <Morph />
           </div>
           <div className="computer-2" >
               <img src={Compu22} alt="computer" ref={(el) => (compu22 = el)}/> 

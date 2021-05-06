@@ -2,7 +2,7 @@ import React from 'react'
 import './Sidebar.css'
 import DateApi from './DateApi'
 import LogoEterna from '../../../assets/eterna logo.svg'
-import Faces from './Faces'
+import Faces from './Faces.js'
 import Facebook from '../../../assets/facebook.svg'
 import Linkedin from '../../../assets/linkedin.svg'
 
@@ -18,7 +18,7 @@ function Sidebar(){
                 <div className="side-elements">
                     <DateApi />
                     <div className="face-cont">
-                      <Faces/>
+                      <Faces />
                     </div>
                     <div className="socialm-cont">
                       <img src={Facebook} alt="facebook"/>

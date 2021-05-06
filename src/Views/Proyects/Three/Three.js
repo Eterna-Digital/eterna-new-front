@@ -33,13 +33,14 @@ function Three() {
             scrollTrigger: {
               trigger: compu33,
               start: "top-=250 center",
-            end: "top-=250 top",
+              end: "top-=250 top",
               // markers: true,
-              scrub: 1.0
+              scrub: 1.0,
+
             }
         } );
         tl.to(mor, {
-            xPercent:5,
+            yPercent:80,
     ease: "none",
     scrollTrigger: {
       trigger: mor,
@@ -47,7 +48,7 @@ function Three() {
     }
         });
         tl.to(trans, {
-            yPercent: -5,
+            xPercent: -30,
             ease: "none",
             scrollTrigger: {
               trigger: trans,

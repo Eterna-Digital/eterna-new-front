@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 100;
     margin-left: 2%;
+    /* border: 2px solid red; */
 
 }
 .cont-s{
@@ -30,6 +31,7 @@ figure img{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* border: 2px solid rgb(86, 80, 46); */
 }
 .date-cont{
     height: 35%;
@@ -47,11 +49,15 @@ figure img{
     color: #E8E8E8;
 }
 .face-cont{
+    width: 50%;
     height: 40%;
+    /* border: 2px solid pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-.face-cont img{
-    width: 1.2rem;
-}
+
 .socialm-cont{
     margin-top: 45%;
     display: flex;

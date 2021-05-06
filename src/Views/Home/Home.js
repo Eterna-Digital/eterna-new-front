@@ -1,6 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 
 import './HomeStyle.css';
 import waveLf from '../../assets/back 1 lights.png'
@@ -10,6 +11,8 @@ import SlideShow from '../components/slider/Slide.js'
 
 
 gsap.registerPlugin(ScrollTrigger)
+
+
 
 function Home() {
 let txt = useRef(null);
@@ -44,14 +47,7 @@ useEffect(() => {
       scrub: true
     }
       })
-
-
-
-
-
 });
-
-
 
 
   return (

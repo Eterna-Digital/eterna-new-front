@@ -31,13 +31,13 @@ justify-content: flex-end;
     margin-bottom: 85%;
     margin-left: 35%;
     z-index:8;
+    margin-top: -10%;
 }
 .circ3 img:nth-of-type(2){
     width: 15rem;
     left: -3rem;
     position: relative;
     margin-top: 48%;
-    
 }
 .w-cont{
     height: 100%;

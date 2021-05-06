@@ -23,7 +23,7 @@ function Footer() {
               </div>
               <div className="s1">
                    <h6>SERVICIOS</h6>
-                   <p>55-12335678 <br/> contacto@eterna.digital</p>
+                   <p>5575925219 <br/> contacto@eterna.digital</p>
               </div>
               </div>
            </div>
