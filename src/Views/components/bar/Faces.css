@@ -1,22 +1,35 @@
 .contai{
-    /* width: 30%; */
+    width: 80%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* border: 2px solid green; */
+    align-items: flex-start;
+}
+.contai span{
+    width: 1px;
+    height: 36%;
+    margin-left: 0.5rem;
+    background-color: #FFFFFF;
 }
 .contai .cont-c{
     width: 100%;
-    /* height: 100%; */
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    transform: rotate(90deg);
-	/* transform-origin: left top 0; */
-    /* border: 2px solid gold; */
+    flex-direction: column;
 }
-.contai .cont-c img{
-    width: 40%;
-    margin: 0 0.3rem 0 0.3rem;
+.cont-c .face{
+    width: 45%;
+    position: relative;
+    padding-top: 60%;
+}
+.face img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    transform: rotate(360deg);
+    width: 80%;
+    display: block;
+    margin:  0rem 0 0rem ;
 }

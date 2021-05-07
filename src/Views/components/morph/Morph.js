@@ -1,23 +1,34 @@
 import React, {useRef, useEffect } from "react";
 import  gsap  from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { TweenMax } from 'gsap'
+
 import "./Morph.css";
 
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(TweenMax)
+
 
 function Morph() {
     let b1 = useRef(null);
     let b2 = useRef(null);
     let b3 = useRef(null);
     let b4 = useRef(null);
+    let div = useRef(null);
     const tl = gsap.timeline();
-
-
-
+  
    useEffect(() => {
+
+     tl.from(div, {
+       opacity: 0,
+       duration: 5,
+       scrollTrigger: {
+         trigger: ".two-container",
+        //  markers: true,
+         start: "top center",
+            end: "bottom",
+            // toggleActions: "restart"
+       }
+     })
     tl.to(b1, {
         y: "-80",
         // rotation: 20, duration: 1,
@@ -68,7 +79,7 @@ function Morph() {
 
 
     return (
-        <div className="container-morph">
+        <div className="container-morph" ref={(el) => (div = el)}>
           <div alt="particles1" ref={(el) => (b1 = el)} > </div>
 
         <div alt="particles"  ref={(el) => (b2 = el)}></div> 

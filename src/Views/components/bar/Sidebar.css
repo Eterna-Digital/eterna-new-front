@@ -47,6 +47,7 @@ figure img{
     font-family: 'Source Code Pro', monospace;
     font-size: 0.8rem;
     color: #E8E8E8;
+    margin-left: 0.5rem;
 }
 .face-cont{
     width: 50%;
@@ -61,11 +62,16 @@ figure img{
 .socialm-cont{
     margin-top: 45%;
     display: flex;
+    margin-left: 0.5rem;
 }
 .socialm-cont :nth-of-type(1){
     width: 6%;
     margin-right: 20%;
 }
+
+
 .socialm-cont :nth-of-type(2){
     width: 12%;
 }
+
+
