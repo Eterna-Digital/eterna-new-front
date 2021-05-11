@@ -28,12 +28,7 @@ const tlContent = gsap.timeline();
 
 useEffect(() => {
   tlContent
-  // .from(wave1, {
-  //   duration: 1.5 ,
-  //     x: "-80",
-  //     scrub: 1.5,
-  //     ease: "power1.out",
-  // })
+
   
   .from(line, {
     scaleX: 0, transformOrigin: "left center",
@@ -68,6 +63,13 @@ useEffect(() => {
     scrub: 1.5,
     ease: "power1.out",
 } )
+// .from(wave1, {
+//   duration: 1.5 ,
+//     x: "-80",
+//     scrub: 1.5,
+//     ease: "power1.out",
+
+// }, "-=1.5")
 .from(wave2, {
   duration: 1.5 ,
     y: "10",

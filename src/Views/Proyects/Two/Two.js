@@ -54,7 +54,7 @@ return (
               <p>Gestión legal <br/> automatizada</p>
               <p>Nuestra plataforma cuenta con una <br/> inteligencia la cual es capaz de brindar una <br/> gestión legal automatizada, desde creación <br/> de contratos, almacenamiento de cada <br/> persona que ha firmado un contrato y la <br/> digitalización de firmas y machotes.</p>
               <div className="btn-card">
-              <a className="btn"><span>Visitar</span><em></em></a>
+              <a href="https://www.tlegal.app/" target="_blank" className="btn"><span>Visitar</span><em></em></a>
               </div>
           </div>
       </div>

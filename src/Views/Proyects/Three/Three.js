@@ -70,7 +70,7 @@ function Three() {
               <p>Sistema aumentado <br/>de comunicación</p>
               <p>La familia wunnel tiene diferentes <br/> automatizaciones con el objetivo de unificar <br/> la comunicación de una empresa, desde <br/> nuevas contrataciones, administración de <br/> viáticos, reembolsos a clientes, pagos <br/> simples, entre otras.</p>
               <div className="btn-card">
-              <a className="btn"><span>Visitar</span><em></em></a>
+              <a href="https://www.wunnel.app/" target="_blank" className="btn"><span>Visitar</span><em></em></a>
               </div>
           </div>
           <div className="compu-4" ref={(el) => (compu33 = el)}>

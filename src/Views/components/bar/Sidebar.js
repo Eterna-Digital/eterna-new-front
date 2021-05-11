@@ -21,8 +21,8 @@ function Sidebar(){
                       <Faces />
                     </div>
                     <div className="socialm-cont">
-                      <img src={Facebook} alt="facebook"/>
-                      <img src={Linkedin} alt="linkedIn"/>
+                      {/* <img src={Facebook} alt="facebook"/> */}
+                      <a href="https://www.linkedin.com/company/eterna-digital" target="_blank"><img src={Linkedin} alt="linkedIn"/></a>
                     </div>
                 </div>
             </div>

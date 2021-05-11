@@ -51,6 +51,7 @@ justify-content: flex-end;
 }
 
 .w-cont img{
+
     width: 35%;
 }
 
@@ -97,6 +98,7 @@ justify-content: flex-end;
     line-height: 64px;
     position: absolute;
     z-index: 0;
+    text-decoration:none;
   }
 .w-cont .btn span {
     text-align: left;
@@ -167,17 +169,16 @@ justify-content: flex-end;
   transform: scaleX(1);
 }
 .compu-4{
-    /* border: 2px solid greenyellow; */
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     position: absolute;
-    left: 10%;
+    left: 35%;
 }
 .compu-4 img{
-    width: 72%;
-    height: 82%;
+  width: 48rem;
+  margin-left: 30%;
     margin-top: 8%;
 }
 

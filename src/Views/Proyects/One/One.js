@@ -9,6 +9,7 @@ import CircleTrans from '../../../assets/circulo-trans.svg'
 import Compu2 from '../../../assets/compu-s2.png'
 import Reclutalogo from '../../../assets/reclutachat logo.svg'
 import Ondita from '../../../assets/ondita.svg'
+import Purple from '../../../assets/circle-mo.svg'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -91,7 +92,7 @@ return(
               <p>Inteligencia, <br/> automatizaciones <br/> & data para <br/> contrataciones</p>
               <p>Reclutachat arranca con un concepto <br/> para generar base de datos de personal <br/> y búsqueda de talento masivo para <br/> grandes empresas, análisis de rotación <br/> y predicciones psicométricas.</p>
               <div className="btn-card">
-              <a className="btn"><span>Visitar</span><em></em></a>
+              <a href="https://www.facebook.com/Reclutachat-105424471230070/" target="_blank" className="btn"><span>Visitar</span><em></em></a>
               </div>
             </div>
             <div className="div-comp4">
@@ -112,7 +113,7 @@ return(
                 </ul>
             </div>
             <div className="div-comp5 " >
-                <div className="morado" ref={(el) => (morado = el)} />
+                <img src={Purple} alt="transparent" className="purple" ref={(el) => (morado = el)} />
                 <img src={CircleTrans} alt="transparent" ref={(el) => (ctransparent = el)} />
 
             </div>

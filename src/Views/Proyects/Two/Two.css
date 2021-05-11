@@ -44,7 +44,7 @@ position: relative;
 .computer-2 img{
     position: absolute;
     left: 7%;
-    width: 68%;
+    width: 48rem;
     z-index: 5;
 }
 .tl-container{
@@ -107,6 +107,7 @@ position: relative;
     line-height: 64px;
     position: absolute;
     z-index: 0;
+    text-decoration:none;
   }
 
   .tl-container .btn span {
