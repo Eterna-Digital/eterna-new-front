@@ -8,6 +8,13 @@ import waveR from '../../assets/back 2 lights.png'
 import LogoEtBco from '../../assets/blancologo.svg'
 import SlideShow from '../components/slider/Slide.js'
 
+import Sidebar from '../../Views/components/bar/Sidebar'
+import One from '../../Views/Proyects/One/One.js'
+import Two from '../../Views/Proyects/Two/Two.js'
+import Three from '../../Views/Proyects/Three/Three.js'
+import Four from '../../Views/Proyects/Four/Four.js'
+import Footer from '../../Views/components/footer/Footer.js' 
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -113,7 +120,10 @@ useEffect(() => {
 
 
   return (
+    <div>
+      <Sidebar/>
     <div className="app-container">
+
       <div id="hero"  className="container-home" >
         <div className="cont-cont" ref={(el) => (txt = el)}>
           <div className="contTxt"  >
@@ -141,7 +151,15 @@ useEffect(() => {
               <SlideShow />
           </div>
         </div>
+
     </div>
+    <One/>
+    <Two/>
+        <Three/>
+        <Four/>
+        <Footer/>
+    </div>
+
   )
 }
 

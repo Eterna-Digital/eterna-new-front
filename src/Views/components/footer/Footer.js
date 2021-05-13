@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import EternaLogo from '../../../assets/eterna logo.svg'
 
+
 function Footer() {
     return (
-       
         <div className="footer-container">
            <div className="ftr-cont">
                <div className="f-c">
@@ -28,7 +29,9 @@ function Footer() {
               </div>
            </div>
            <div className="therms">
+              <Link to="/terms">
               <p>Términos y condiciones <br/> © 2020 Eterna</p>
+                  </Link>
            </div>
            </div>
         </div>

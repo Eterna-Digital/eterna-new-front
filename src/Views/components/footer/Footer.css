@@ -64,10 +64,34 @@
     justify-content: center;
 }
 .therms p{
+    width: 100%;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: #959595;
     font-size: 0.5rem;
     margin-left: 30%;
     line-height: 0.8rem;
+}
+
+.terms-cont{
+    padding: 10%;
+}
+.terms-cont img{
+    width: 40%;
+}
+.terms-cont h4, h5{
+    text-align-last: left;
+}
+.terms-cont p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+.terms-cont ul{
+    text-align: left;
+}
+.terms-cont ul li{
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: justify;
 }
 

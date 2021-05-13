@@ -9,7 +9,7 @@ function Four() {
   return (
     <div className="four-container">
       <div className="f-cont">
-        <h4>PROXIMAMENTE</h4>
+        <h4>PRÓXIMAMENTE</h4>
         <div className="container">
           <div className="card1">
             <div className="box">
