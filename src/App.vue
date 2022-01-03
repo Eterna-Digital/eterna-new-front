@@ -1,32 +1,54 @@
 <template>
-  <div id="app">
-    <SideBar/>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="transparent"
+      dark
+      class="sideb d-flex justify-center"
+      elevation="0"
+    >
+      <div class="d-flex justify-center align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mt-16"
+          contain
+          src="./assets/eterna-logo.svg"
+          transition="scale-transition"
+          width="130"
+        />
+
+      </div>
+
+    </v-app-bar>
+
+    <v-main class="main pa-0">
+      <Home/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import SideBar from "./components/SideBar.vue"
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home';
 
 export default {
   name: 'App',
+
   components: {
-    SideBar,
-    HelloWorld
-  }
-}
+    Home,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
 <style>
-#app {
-  text-align: center;
-  color: #2c3e50;
-  margin:0;
-  padding: 0;
+.sideb{
+  width: 20%;
+  height: 100vh !important;
 }
-body {
-    display: block;
-    margin: 0px !important;
+.main{
+
 }
 </style>

@@ -3,6 +3,7 @@
       <img src="../assets/eterna-logo.svg" class="logo-e">
       <div class="side-elements">
             
+            
           </div>
   </div>
 </template>

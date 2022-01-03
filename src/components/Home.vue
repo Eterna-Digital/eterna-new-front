@@ -1,10 +1,11 @@
 <template>
 <div class="cont-home">
+  <span></span>
   <!-- <side-bar></side-bar> -->
   <div class="cont-home2">
   <section>
     <!-- <div class="bg"  id="bg"> </div> -->
-    <!-- <img class="jet" src="../assets/logo.png" id="jet"> -->
+    <img class="jet" src="https://www.pngitem.com/pimgs/m/75-759483_alien-4-icon-aliens-cartoon-png-transparent-png.png" id="jet">
     <img class="hulk" src="https://www.pngitem.com/pimgs/m/75-759483_alien-4-icon-aliens-cartoon-png-transparent-png.png" id="hulk">
    
   </section>
@@ -56,15 +57,20 @@ gsap.to(".jet", {
     },
     x: -200,
     y: -1800,
-    scale: 1
+    // scale: 1
 })
 gsap.to(".hulk", {
     scrollTrigger: {
         scrub: true
     },
-    x: 1000,
-    y: 200,
-    scale: 1.1
+    x: 200,
+    // y: -200,
+    scale: 1,
+    
+  autoAlpha: 0,
+  y: "40vh",
+  // ease: Linear.easeNone
+
 })
 }
 
@@ -83,14 +89,18 @@ gsap.to(".hulk", {
   width: 100vw;
   height: 100vh;
   display: flex;
-
   background-color: #343232;
+
+}
+span{
+  width: 25%;
+
 }
 .cont-home2{
   background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFF6F600 100%) 0% 0% no-repeat padding-box;
   mix-blend-mode: screen;
 opacity: 0.13;
-width: 80%;
+width: 100vw;
 }
 
 section {
