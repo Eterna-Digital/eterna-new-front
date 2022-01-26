@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="358.148" height="358.148" viewBox="0 0 358.148 358.148">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.56;
+      }
+
+      .cls-2 {
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+        isolation: isolate;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="white_circles" data-name="white circles" class="cls-1" transform="translate(-397.814 -687.551) rotate(-22)">
+    <circle id="Ellipse_10" data-name="Ellipse 10" class="cls-2" cx="137.56" cy="137.56" r="137.56" transform="translate(72.678 882.067)"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" class="cls-2" cx="86.532" cy="86.532" r="86.532" transform="translate(131.528 932.892)"/>
+  </g>
+</svg>

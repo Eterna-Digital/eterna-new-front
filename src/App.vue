@@ -4,37 +4,43 @@
       app
       color="transparent"
       dark
-      class="sideb d-flex justify-center"
+      class="sideb d-flex flex-column align-center"
       elevation="0"
     >
-      <div class="d-flex justify-center align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mt-16"
-          contain
-          src="./assets/eterna-logo.svg"
-          transition="scale-transition"
-          width="130"
-        />
-
-      </div>
-
+      <Faces />
     </v-app-bar>
 
     <v-main class="main pa-0">
-      <Home/>
+      <Home />
+      <Carousel />
+      <Projects />
+      <ComingSoon />
+      <Form />
+      <Footer />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Home from './components/Home';
+import Home from "./views/Home";
+import Carousel from "./views/Carousel";
+import Projects from "./views/Projects.vue";
+import ComingSoon from "./views/ComingSoon.vue";
+import Form from "./views/Form.vue";
+import Footer from "./components/Footer.vue";
+import Faces from "./components/Faces/Faces.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     Home,
+    Carousel,
+    Projects,
+    ComingSoon,
+    Form,
+    Footer,
+    Faces,
   },
 
   data: () => ({
@@ -44,11 +50,14 @@ export default {
 </script>
 
 <style>
-.sideb{
-  width: 20%;
-  height: 100vh !important;
+.sideb {
+  width: 15%;
+  margin-top: 20% !important;
+  height: 100% !important;
+  z-index: 25 !important;
+  background-color: rgb(7, 53, 11) !important;
 }
 .main{
-
+  overflow: hidden !important;
 }
 </style>

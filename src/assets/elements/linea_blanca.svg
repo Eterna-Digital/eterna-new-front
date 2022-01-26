@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="177" height="10" viewBox="0 0 177 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="linea_blanca" data-name="linea blanca" transform="translate(-178.219 -575.022)">
+    <path id="Path_31" data-name="Path 31" class="cls-1" d="M179.219,576.022c6.729,0,6.729,8,13.458,8s6.729-8,13.458-8,6.729,8,13.459,8,6.731-8,13.462-8,6.729,8,13.459,8,6.73-8,13.461-8,6.73,8,13.461,8,6.728-8,13.457-8,6.73,8,13.46,8,6.732-8,13.465-8,6.73,8,13.46,8,6.735-8,13.47-8,6.735,8,13.47,8"/>
+  </g>
+</svg>
