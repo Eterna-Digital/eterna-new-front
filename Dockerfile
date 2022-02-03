@@ -5,21 +5,11 @@ FROM node:14.2.0-alpine as build-stage
 WORKDIR /app
 
 # install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install --silent
-RUN npm install react-scripts@3.4.1 -g --silent
+COPY package*.json ./
+
+RUN npm install
 
 # add app
-COPY . ./
+COPY . .
 
-RUN npm run build
-
-# etapa de producción
-FROM nginx:1.17.10-alpine as production-stage
-RUN mkdir /app
-COPY --from=build-stage /app/dist /app
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# start app
-CMD ["npm", "start"]
+CMD ["node", "start"]
