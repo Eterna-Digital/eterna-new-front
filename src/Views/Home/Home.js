@@ -16,8 +16,7 @@ import Four from '../../Views/Proyects/Four/Four.js'
 import Footer from '../../Views/components/footer/Footer.js' 
 
 
-gsap.registerPlugin(ScrollTrigger)
-
+gsap.registerPlugin(ScrollTrigger);
 
 
 function Home() {
@@ -39,13 +38,8 @@ useEffect(() => {
   
   .from(line, {
     scaleX: 0, transformOrigin: "left center",
-    // opacity: 0,
-    // x: 60,
-    // scrub: 4.0,
     duration: 0.6,
     scrub: 1.5,
-    // ease: "power1.out",
-    // duration: 1,
   })
   tlContent.from(logo, {
     opacity: 0,
@@ -132,7 +126,7 @@ useEffect(() => {
             </span>
             
             <h1  ref={(el) => (title = el)}>NUESTRA MISIÓN</h1>
-            <p ref={(el) => (txtHome = el)}>Queremos vivir en el mundo de Harry Potter y lo haremos<br /> gracias a la tecnología</p>
+            <p ref={(el) => (txtHome = el)}>Queremos vivir en el mundo de Harry Potter y lo haremos gracias a la tecnología</p>
           </div>
         </div>
         <div className="waves-cont"  >

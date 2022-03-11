@@ -4,7 +4,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Morph from '../../components/morph/Morph'
 
 import './Two.css'
-import Particles from '../../../assets/tlegal_element.svg'
 import Compu22 from '../../../assets/tlegal_img.png'
 import TLegal from '../../../assets/tlegal logo.svg'
 
@@ -54,7 +53,7 @@ return (
               <p>Gestión legal <br/> automatizada</p>
               <p>Nuestra plataforma cuenta con una <br/> inteligencia la cual es capaz de brindar una <br/> gestión legal automatizada, desde creación <br/> de contratos, almacenamiento de cada <br/> persona que ha firmado un contrato y la <br/> digitalización de firmas y machotes.</p>
               <div className="btn-card">
-              <a href="https://www.tlegal.app/" target="_blank" className="btn"><span>Visitar</span><em></em></a>
+              <a href="https://www.tlegal.app/" target="_blank" rel='noreferrer' className="btn"><span>Visitar</span><em></em></a>
               </div>
           </div>
       </div>

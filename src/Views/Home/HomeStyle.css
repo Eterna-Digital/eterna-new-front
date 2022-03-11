@@ -1,149 +1,204 @@
-.app-container{
-    margin: 0;
-    padding: 0 0 0 0;
-    width: 100vw;
-    /* height: 100vh; */
-    background-color: #343232;
-    mix-blend-mode: screen;
-
-    /* opacity: 0.13; */
-    
+.app-container {
+  margin: 0;
+  padding: 0 0 0 0;
+  width: 100vw;
+  height: 200vh;
+  background-color: #343232;
+  mix-blend-mode: screen;
 }
-.container-home{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: relative;
+.container-home {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
 }
-.cont-cont{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 10;
+.cont-cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
 }
 
+.contTxt {
+  position: absolute;
+  z-index: 8;
+  margin-top: 14%;
+  margin-left: -4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 10;
+}
+.contTxt img {
+  width: 30%;
+}
+.contTxt span {
+  width: 10%;
+  height: 1px;
+  margin: 5% 0 5% 0;
+  background-color: rgb(255, 242, 242);
+  display: flex;
+  justify-content: flex-start;
+}
 
-.contTxt{
-    position: absolute;
-    z-index: 8;
-    margin-top: 14%;
-    margin-left: -4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    z-index: 10;
+.contTxt h1 {
+  font-family: "Source Code Pro", monospace;
+  color: #ffffff;
+  font-weight: normal;
+  letter-spacing: 10px;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 0;
 }
-.contTxt img{
-    width: 30%;
-}
-.contTxt span{
-    width: 10%;
-    height: 1px;
-    margin: 5% 0 5% 0;
-    background-color: rgb(255, 242, 242);
-    display: flex;
-    justify-content: start;
+.contTxt p {
+  font-family: "Source Code Pro", monospace;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
-.contTxt h1{
-    font-family: 'Source Code Pro', monospace;
-    color: #FFFFFF;
-    font-weight: normal;
-    letter-spacing: 10px;
-    text-align: left;
-    font-size: 1.5rem;
-    margin: 0;
+.waves-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
 }
-.contTxt p{
-    font-family: 'Source Code Pro', monospace;
-    text-align: left;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 1.4rem;
+.waves-cont .one-wave {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-top: 10%;
+  /* margin-top: 60%; */
+  /* mix-blend-mode: screen; */
+}
+.waves-cont .one-wave img {
+  width: 95%;
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+.waves-cont .two-wave {
+  width: 70%;
+  height: 100%;
+  margin-left: -20%;
+  position: absolute;
+  /* border: 2px solid pink; */
+  z-index: 5;
+}
+.waves-cont .two-wave img {
+  top: 70%;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+.slider-cont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #343232;
+  position: relative;
+}
+.slider-cont p {
+  z-index: 10;
+  top: -25%;
+}
+
+.slider-cont .slider {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.slider p {
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
+  letter-spacing: 10px;
+  position: absolute;
+  margin-top: 22%;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+@media (200px <= width <= 700px) {
+  .app-container {
+    height: 180vh;
+  }
+  .contTxt {
+    width: 80%;
+    margin-top: 35%;
+    margin-left: 10%;
+  }
+  .contTxt img {
+    width: 60%;
+  }
+  .contTxt span {
+    width: 20%;
+    height: 2px;
+  }
+  .contTxt h1 {
     font-size: 1rem;
-    font-weight: lighter;
-}
-
-
-.waves-cont{
+  }
+  .contTxt p {
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+  .waves-cont {
     width: 100%;
-    height: 100%;
-    /* background-color: red; */
+    height: 10%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
-}
-.waves-cont .one-wave{
-    width: 50%;
+  }
+  .waves-cont {
+    margin-top: 40%;
+  }
+  .waves-cont .one-wave {
+    width: 100%;
     height: 80%;
-    /* margin-bottom: 3%; */
-    /* border: 2px solid greenyellow; */
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    margin-top: 10%;
-    /* margin-top: 60%; */
-    /* mix-blend-mode: screen; */
-}
-.waves-cont .one-wave img{
-    width: 95%;
-    opacity: 0.9;
-    mix-blend-mode: screen;
-
-}
-.waves-cont .two-wave{
-   width: 70%;
-   height: 100%;
-   margin-left: -20% ;
-   position: absolute;
-   /* border: 2px solid pink; */
-   z-index: 5;
-}
-.waves-cont .two-wave img{
-    top: 70%;
-    position: absolute;
+    margin-top: 20%;
+  }
+  .waves-cont .one-wave img {
+    width: 100%;
+  }
+  .waves-cont .two-wave {
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+  }
+  .waves-cont .two-wave img {
+    top: 60%;
     width: 100%;
     height: 70%;
-    opacity: 0.9;
-    mix-blend-mode: screen;
-
-} 
-
-.slider-cont{
+  }
+  .slider-cont {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #343232;
-    position: relative;
-    /* z-index: 7; */
-    /* border: 2px solid blue; */
-}
-.slider-cont p{
+    align-items: center;
+  }
+  .slider-cont p {
     z-index: 10;
-    top: -25%;
-}
-
-.slider-cont .slider{
-    width: 70%;
-    height: 70%;
-    /* background-color: gold; */
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-}
-
-.slider p{
-    font-family: 'Source Code Pro', monospace;
-    color: #fff;
-    letter-spacing: 10px;
-    position: absolute;
-    margin-top: 22%;
-    font-size: 1.2rem;
+    top: -18%;
+  }
+  .slider-cont .slider {
+    width: 100%;
+  }
+  .slider p {
+    width: 90%;
+    font-size: 1rem;
     font-weight: lighter;
+  }
 }
-
