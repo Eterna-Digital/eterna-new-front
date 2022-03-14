@@ -14,6 +14,7 @@ RUN npm install react-scripts@3.4.1 -g --silent
 # add app
 COPY . .
 
+RUN npm audit fix
 RUN npm run build
 
 # nginx state for serving content
