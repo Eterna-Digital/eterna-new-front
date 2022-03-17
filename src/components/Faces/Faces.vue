@@ -1,14 +1,23 @@
 <template>
   <div class="contai">
-    <div class="cont-sid d-flex flex-column justify-center align-center">
+    <div class="cont-sid">
       <v-img
         alt="Vuetify Logo"
-        class="shrink"
+        class="shrink eterna"
         contain
         src="../../assets/elements/eterna-logo.svg"
         transition="scale-transition"
         width="130"
       />
+      <button class="social-icon-2 ml-3">
+        <a
+          href="https://www.linkedin.com/company/eterna-digital"
+          target="_blank"
+          class="btn-link-cbm"
+        >
+          <img src="../../assets/elements/linkedin.svg" class="link-d" />
+        </a>
+      </button>
     </div>
     <div class="cont-cc">
       <div class="date-cont">
@@ -145,9 +154,7 @@ export default {
         (current.getMonth() + 1) +
         " " +
         current.getFullYear();
-
       const dateTime = date;
-
       return dateTime;
     },
   },
@@ -165,6 +172,10 @@ export default {
   z-index: 25;
 }
 .cont-sid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 30% 0 20% 0;
 }
 .cont-cc {
@@ -209,9 +220,39 @@ export default {
   width: 100%;
   z-index: 20;
 }
+.social-icon-2 {
+  display: none;
+}
 .social-icon {
   width: 1rem;
   height: 1rem;
   background-image: url("../../assets/elements/linkedin.svg");
+}
+@media only screen and (max-width: 600px) {
+  .contai {
+    height: 100vh !important;
+    width: 100vw;
+  }
+  .cont-sid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+    width: 100vw;
+  }
+
+  .social-icon-2 {
+    display: block;
+    width: 3%;
+  }
+  .cont-cc {
+    display: none !important;
+  }
+  .line-side {
+    display: none;
+  }
+  .social-icon {
+    display: none;
+  }
 }
 </style>

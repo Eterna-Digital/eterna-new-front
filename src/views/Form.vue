@@ -1,6 +1,6 @@
 <template>
   <div class="form-cont d-flex justify-center align-center">
-    <v-card elevation="0" color="transparent" class="d-flex flex-column">
+    <v-card elevation="0" color="transparent" class="d-flex flex-column form-c">
       <span class="line-f"></span>
       <h1 class="mt-3">CONTACTO</h1>
       <p class="mt-5">COMUNÍCATE CON NUESTRO EQUIPO!</p>
@@ -28,17 +28,11 @@ export default {};
 .form-cont {
   font-family: "Source Code Pro", monospace !important;
   width: 100vw;
-  height: 100vh;
   background-color: #272626;
-  padding-bottom: 30%;
-  padding-top: 30%;
+  padding-bottom: 10%;
+  padding-top: 10%;
 }
-.line-f {
-  width: 3.5rem;
-  height: 1px;
-  border: 1px solid #ffffff !important;
-  background-color: #fff;
-}
+
 .form-cont p,
 h1 {
   font-weight: lighter;
@@ -94,5 +88,16 @@ textarea::placeholder {
 .btn-form:hover {
   background: #272626;
   color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .form-cont {
+    padding-top: 40%;
+  }
+  .input-form {
+    width: 95%;
+  }
+  textarea {
+    width: 95%;
+  }
 }
 </style>

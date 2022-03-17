@@ -29,10 +29,8 @@ import ComingSoon from "./views/ComingSoon.vue";
 import Form from "./views/Form.vue";
 import Footer from "./components/Footer.vue";
 import Faces from "./components/Faces/Faces.vue";
-
 export default {
   name: "App",
-
   components: {
     Home,
     Carousel,
@@ -42,7 +40,6 @@ export default {
     Footer,
     Faces,
   },
-
   data: () => ({
     //
   }),
@@ -60,4 +57,11 @@ export default {
 .main{
   overflow: hidden !important;
 }
-</style>
+@media only screen and (max-width: 600px) {
+.sideb {
+  width: 100%;
+  margin-top: 80% !important;
+  height: 10% !important;
+}
+}
+</style> 

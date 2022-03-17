@@ -138,4 +138,43 @@ export default {
 .hr hr {
   margin-top: 1rem;
 }
+@media only screen and (max-width: 600px) {
+.slide-cont {
+  margin-top: 40%;
+  display: none;
+}
+.carousel {
+  width: 100%;
+  display: none;
+}
+.counter {
+display: none;
+}
+.item {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70% !important;
+  border: 2px solid red; */
+  display: none;
+}
+.counter {
+  display: none;
+  /* border: 2px solid red;
+  width: 22%;
+  position: absolute;
+  margin-top: 34.5%;
+  display: flex;
+  justify-content: flex-start !important;
+  font-family: "Source Code Pro", monospace !important;
+  color: #edecfe;
+  font-weight: lighter; */
+}
+.hr {
+display: none;
+}
+.hr hr {
+ display: none;
+}
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="cont-bcloud d-flex justify-center align-center">
-    <v-card elevation="0" class="d-flex" color="transparent" width="75%">
+    <v-card elevation="0" class="d-flex card-cont-bc" color="transparent" >
       <v-container class="d-flex conc mt-5" fluid grid-list-md wrap>
         <v-layout row wrap>
           <v-flex d-flex xs12 sm12 md4>
@@ -9,7 +9,7 @@
                 src="../../assets/logos/eterna-becloud-logo.svg"
                 class="img-bc"
               />
-              <div>
+              <div class="info-bc">
                 <h1 class="number">01</h1>
                 <h1 class="title ma-0 pa-0">CLOUD NATIVE</h1>
                 <p class="txt-sec">
@@ -75,6 +75,9 @@ export default {
   background-image: url("../../assets/gradients/gradient_1.png");
   background-size: cover;
   padding-bottom: 5%;
+}
+.card-cont-bc{
+  width: 75%;
 }
 .info-sec .img-bc {
   width: 80%;
@@ -188,5 +191,38 @@ export default {
 }
 .ondita-c img {
   width: 6rem !important;
+}
+@media only screen and (max-width: 600px) {
+.card-cont-bc{
+  width: 90%;
+}
+.info-sec{
+  width: 100vw !important;
+  margin-right: 5%;
+}
+.info-sec .img-bc {
+  width: 80%;
+}
+.info-sec .txt-sec {
+  width: 75vw !important;
+  font-family: "Roboto", sans-serif;
+  color: #edecfe;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  margin-top: 5%;
+  text-align: justify;
+}
+.photo-sec {
+  margin-top: 15%;
+  margin-right: 15%;
+  width: 100vw;
+}
+.ondita-c {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40%;
+  margin-left: 35%;
+}
 }
 </style>

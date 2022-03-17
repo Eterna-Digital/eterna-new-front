@@ -10,7 +10,7 @@
             <div class="line-e"></div>
             <h1 class="mission">NUESTRA MISION</h1>
             <p class="mt-3 txt-h">
-              QUEREMOS VIVIR EN EL MUNDO DE HARRY POTTER Y LO HAREMOS <br />
+              QUEREMOS VIVIR EN EL MUNDO DE HARRY POTTER Y LO HAREMOS 
               GRACIAS A LA TECNOLOGÍA
             </p>
           </div>
@@ -153,12 +153,9 @@ export default {
   font-size: 1rem;
 }
 .cont-2 {
-  border: 2px solid rgb(0, 255, 136);
   width: 100%;
 }
-.wave-b {
-  width: 100%;
-}
+
 .wave-b {
   width: 100%;
   position: absolute;
@@ -176,10 +173,53 @@ export default {
   margin-top: -20%;
   margin-left: 45%;
 }
-.cont-c {
+
+@media only screen and (max-width: 600px) {
+.cont-waves {
+justify-content: flex-start;
+  margin-top: -50%;
+  margin-left: -26%;
+}
+.wave-top-txt {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
-  height: 100vh;
-  position: absolute;
-  margin-top: -15%;
+}
+.txt-home {
+  margin-left: 10%;
+}
+.txt-home .log-e {
+  width: 60%;
+}
+.txt-home .line-e {
+  width: 15%;
+  height: 1px;
+}
+.txt-home h1 {
+  font-size: 1rem;
+}
+.txt-home p {
+  font-size: 0.8rem;
+}
+.wave-b {
+  width: 100vw;
+  margin-top: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.wave-b .wave-2 {
+  width: 100% !important;
+  margin-left: 0%;
+  margin-top: 45%;
+}
+.wave-b .our-p {
+  font-size: 1rem;
+  margin-bottom: 10%;
+  width: 90%;
+  margin-left: 0%;
+  text-align: center;
+
+}
 }
 </style>

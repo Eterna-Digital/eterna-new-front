@@ -1,7 +1,7 @@
 <template>
   <v-footer dark padless class="pt-16">
     <v-card class="flex justify-center pl-10" flat tile color="#2F2F2F">
-      <v-card width="70%" class="pl-16 mt-10" elevation="0" color="#2F2F2F">
+      <v-card class=" mt-10 card-foot" elevation="0" color="#2F2F2F">
         <v-card-title class="title-f">
           <v-img src="../assets/elements/eterna-logo.svg" class="log-footer" />
             </v-card-title>
@@ -31,7 +31,7 @@
                 <div class="d-flex flex-column">
                   <p class="h-text">CONTACTO</p>
                   <p class="txt-f">
-                    55-12335678<br/> 
+                    (+55)12335678<br/> 
                     contacto@eterna.digital
                   </p>
                 </div>
@@ -51,6 +51,10 @@
 </template>
 
 <style scoped>
+.card-foot{
+  width: 75%;
+  padding-left: 10%;
+}
 .title-f{
     width: 20% !important;
 }
@@ -62,5 +66,14 @@
     font-size: 0.7rem;
     font-weight: lighter;
     line-height: 14px;
+}
+@media only screen and (max-width: 600px) {
+.card-foot{
+  width: 100%;
+  padding-left: 0;
+}
+.title-f{
+    width: 60% !important;
+}
 }
 </style>

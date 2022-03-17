@@ -9,7 +9,7 @@
       <v-container class="d-flex conc mt-5" fluid grid-list-md wrap>
         <v-layout row wrap>
           <v-flex d-flex xs12 sm12 md4>
-            <div class="info-sec d-flex flex-column align-start">
+            <div class="info-sec-cbm d-flex flex-column align-start">
               <img src="../../assets/logos/cbmarket-logo.svg" class="img-bc" />
               <div>
                 <h1 class="number">04</h1>
@@ -66,21 +66,21 @@ export default {
       },
       scale: 1.1,
     });
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".sello",
-        pin: true,
-        pinSpacing: false,
-        start: "top top",
-        scrub: 1,
-        toggleClass: "active",
-      },
-    });
-    tl.from(".sello", {
-      opacity: 0,
-      zIndex: 1,
-      scale: 2,
-    });
+    // let tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: ".sello",
+    //     pin: true,
+    //     pinSpacing: false,
+    //     start: "top top",
+    //     scrub: 1,
+    //     toggleClass: "active",
+    //   },
+    // });
+    // tl.from(".sello", {
+    //   opacity: 0,
+    //   zIndex: 1,
+    //   scale: 2,
+    // });
   },
 };
 </script>
@@ -93,22 +93,22 @@ export default {
   padding-bottom: 5%;
   padding-top: 5%;
 }
-.info-sec .img-bc {
+.info-sec-cbm .img-bc {
   width: 80%;
 }
-.info-sec .number {
+.info-sec-cbm .number {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 2.5rem;
   color: #edecfe;
 }
-.info-sec .title {
+.info-sec-cbm .title {
   font-family: "Source Code Pro", monospace !important;
   color: #edecfe;
   font-weight: lighter;
   text-decoration: underline;
 }
-.info-sec .txt-sec {
+.info-sec-cbm .txt-sec {
   width: 80%;
   font-family: "Roboto", sans-serif;
   color: #edecfe;
@@ -131,7 +131,6 @@ export default {
   width: 20%;
   position: absolute;
   margin-right: 85% !important;
-  border: 2px solid white;
 }
 .btn-cbm {
   margin-top: 8% !important;
@@ -204,5 +203,19 @@ export default {
 .btn-cbm:hover .arrow {
   transition: 0.2s ease-in-out;
   margin-left: 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+.cont-cbmarket {
+  padding-top: 25%;
+}
+.info-sec-cbm{
+  margin-left: -5%;
+}
+.info-sec-cbm .txt-sec {
+  width: 90%;
+}
+.photo-sec-cb {
+margin-top: 15%;
+}
 }
 </style>

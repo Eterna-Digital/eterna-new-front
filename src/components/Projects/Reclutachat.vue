@@ -4,11 +4,12 @@
       <v-container class="d-flex conc mt-5 pa-0 ma-0" fluid grid-list-md wrap>
         <v-layout row wrap class="pa-0 ma-0">
           <v-flex d-flex xs12 sm12 md5 class="pa-0">
-            <div class="d-flex flex-column align-end photo-sec-rc rc-scroll">
+            <div class="d-flex photo-sec-rc rc-scroll">
               <img src="../../assets/photos/compu-s2.png" class="r-cht" />
             </div>
           </v-flex>
-          <v-flex d-flex xs12 sm12 md7>
+          <v-flex d-flex xs12 sm12 md2>
+            <!-- <div class="texts-rc"> -->
             <div class="info-sec-rc d-flex flex-column align-start">
               <img src="../../assets/logos/reclutachat.svg" class="img-rc" />
               <div>
@@ -26,7 +27,7 @@
                   Una vez que el cliente define cuando y con que empezará lo
                   guiamos paso a paso a una migración segura y confiable.
                 </p>
-                <div class="btn-rcltcht-cont">
+                <div class="btn-rcltcht-cont  d-none d-sm-flex d-md-none d-lg-flex">
                   <button class="btn-rch">
                     <a
                       href="https://reclutachat.com/"
@@ -34,35 +35,58 @@
                       class="btn-link-rc"
                     >
                       VISITAR
-                      <img src="../../assets/elements/arrow.svg" class="arrow" />
+                      <img
+                        src="../../assets/elements/arrow.svg"
+                        class="arrow"
+                      />
                     </a>
                   </button>
                 </div>
               </div>
             </div>
-            <div class="info-sec-2 d-flex flex-column align-start">
-              <p class="txt-sec-2r">Reclutachat cuenta con:</p>
-              <ul class="list">
-                <li>- Inteligencia para chatbots</li>
-                <li>- Conversaciones automáticas</li>
-                <li>- Generación de base de datos</li>
-                <li>- Predicción de rotación</li>
-                <li>- Predicción de accidents</li>
-                <li>- Capacitaciones digitales, en VR y gameficadas</li>
-                <li>- Automatización en fechas para los reclutadores</li>
-                <li>
-                  - Comunicación previa, durante y posterior a las campañas
-                </li>
-              </ul>
+          </v-flex>
+          <v-flex d-flex xs12 sm12 md5>
+            <div class="all-inf-2">
+              <div class="info-sec-2 d-flex flex-column align-start">
+                <p class="txt-sec-2r">Reclutachat cuenta con:</p>
+                <ul class="list">
+                  <li>- Inteligencia para chatbots</li>
+                  <li>- Conversaciones automáticas</li>
+                  <li>- Generación de base de datos</li>
+                  <li>- Predicción de rotación</li>
+                  <li>- Predicción de accidents</li>
+                  <li>- Capacitaciones digitales, en VR y gameficadas</li>
+                  <li>- Automatización en fechas para los reclutadores</li>
+                  <li>
+                    - Comunicación previa, durante y posterior a las campañas
+                  </li>
+                </ul>
+                <!-- <div class="btn-rcltcht-cont-mb-2  ml-5  d-md-flex d-lg-flex">
+                  <button class="btn-rch">
+                    <a
+                      href="https://reclutachat.com/"
+                      target="_blank"
+                      class="btn-link-rc"
+                    >
+                      VISITAR
+                      <img
+                        src="../../assets/elements/arrow.svg"
+                        class="arrow"
+                      />
+                    </a>
+                  </button>
+                </div> -->
+              </div>
+              <div class="circles-cont">
+                <img src="../../assets/elements/circles-mask.png" />
+              </div>
             </div>
-            <div class="circles-cont">
-              <img src="../../assets/elements/circles-mask.png" />
-            </div>
+            
           </v-flex>
 
-          <div class="ondita-rc">
+          <!-- <div class="ondita-rc">
             <img src="../../assets/elements/linea_blanca.svg" class="img-rc" />
-          </div>
+          </div> -->
         </v-layout>
       </v-container>
     </v-card>
@@ -109,7 +133,16 @@ export default {
   padding-top: 5%;
 }
 .info-sec-rc {
-  width: 35%;
+  width: 100%;
+}
+.texts-rc {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.all-inf-2 {
+  display: flex;
+  height: 100%;
 }
 .info-sec-rc .img-rc {
   width: 80%;
@@ -135,7 +168,7 @@ export default {
   text-align: justify;
 }
 .info-sec-2 {
-  width: 35%;
+  width: 60%;
   margin-left: 5%;
   font-family: "Roboto", sans-serif;
   color: #edecfe;
@@ -156,6 +189,8 @@ export default {
 .photo-sec-rc {
   margin-top: 10%;
   width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .photo-sec-rc .r-cht {
   width: 100%;
@@ -236,10 +271,13 @@ export default {
   display: flex;
   justify-content: flex-end;
   margin-right: -10%;
-  margin-top: 15%;
+  width: 100%;
 }
 .circles-cont img {
-  width: 70%;
+  margin-top: 60%;
+  padding-left: 15%;
+  width: 75%;
+  height: 75%;
 }
 
 .ondita-rc {
@@ -251,5 +289,27 @@ export default {
 }
 .ondita-rc img {
   width: 6rem !important;
+}
+@media only screen and (max-width: 600px) {
+  .circles-cont {
+    display: none;
+  }
+  .info-sec-rc {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  .photo-sec-rc {
+    margin-top: 10%;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .photo-sec-rc .r-cht {
+    width: 70%;
+  }
+  .info-sec-2 {
+    width: 80%;
+    margin-left: 0%;
+  }
 }
 </style>

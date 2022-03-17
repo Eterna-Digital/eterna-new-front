@@ -1,6 +1,6 @@
 <template>
   <div class="cont-tlegal d-flex justify-center align-center">
-    <v-card elevation="0" class="d-flex" color="transparent" width="80%">
+    <v-card elevation="0" class="d-flex card-tl" color="transparent" >
       <v-container class="d-flex conc mt-5" fluid grid-list-md wrap>
         <v-layout row wrap>
           <v-flex d-flex xs12 sm12 md8>
@@ -81,7 +81,9 @@ export default {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
+.card-tl{
+  width: 80%
+}
 .info-sec-tl .img-tl {
   width: 75% !important;
 }
@@ -193,5 +195,24 @@ export default {
 }
 .ondita-tl .img-tl {
   width: 6rem !important;
+}
+@media only screen and (max-width: 600px) {
+.cont-tlegal {
+  padding-top: 25%;
+}
+.card-tl{
+  width: 90%
+}
+.info-sec-tl .img-tl {
+  width: 75% !important;
+  margin-bottom: 10%; 
+}
+.info-sec-tl .txt-sec {
+  width: 90%;
+}
+.ondita-tl {
+  width: 45%;
+  margin-top: 25% !important;
+}
 }
 </style>
